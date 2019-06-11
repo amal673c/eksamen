@@ -1,4 +1,7 @@
-html {}
+html {
+    background-color: #F4F4F4;
+
+}
 
 
 /*navigation*/
@@ -13,7 +16,7 @@ header nav a:visited {
     color: black;
 }
 
-/* mouse over link */
+/* Hover */
 header nav a:hover {
     color: orange;
 }
@@ -24,43 +27,108 @@ header nav a:active {
 }
 
 header {
+    display: flex;
+    flex: wrap;
     position: fixed;
     background: white;
     width: 100%;
     height: 8vw;
     top: 4vw;
-
 }
 
 header nav {
     display: flex;
     flex-direction: column;
     margin: 1rem 1.5rem;
+    padding-top: 0.4rem;
     display: inline-block;
-    align-items: flex-end;
-
+    justify-content: space-between;
+    position: absolute;
 }
 
 header nav a {
     font-size: 2rem;
-    font-family: 'Teko', sans-serif;
+    font-family: 'oswald', sans-serif;
     margin: 0.25rem 0;
     padding: 0.25rem 0;
     text-decoration: none;
-    justify-content: space-between;
-    top: 6vw;
+    align-items: flex-end;
+    top: 0vw;
+}
 
+#menuknap {
+    display: flex;
+    flex: wrap;
+    font-size: 2rem;
+    top: 1vw;
 }
 
 /*navigation slut*/
+
+/*BURGER*/
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+    font-family: cursive;
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+
 
 
 /*forside*/
 
 #splash {
+    /*position: relative;*/
     width: 100%;
     height: 100vh;
     background-image: url(billeder/Artboard%201-20.jpg);
     background-size: cover;
     max-width: none;
+}
+
+#txt p {
+    position: absolute;
+    font-family: 'oswald', sans-serif;
+    justify-content: center;
+    color: orange;
+    font-size: 2rem;
+    left: 40vw;
+}
+
+.navn p {
+    position: relative;
+    font-family: 'oswald', sans-serif;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
+    left: 40vw;
+    top: 0vw;
 }
