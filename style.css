@@ -1,5 +1,5 @@
 html {
-    background-color: #F4F4F4;
+    background-color: white;
 }
 
 /*navigation*/
@@ -26,42 +26,41 @@ header nav a:active {
 
 header {
     position: fixed;
-    display: flex;
-    flex: wrap;
+    display: block;
     background: white;
     width: 100%;
-    height: 8vw;
+    height: 110px;
     top: 4vw;
+    border-left-color: aqua;
 }
 
 header nav {
-    display: flex;
+    position: absolute;
     flex-direction: column;
     margin: 1rem 1.5rem;
     padding-top: 0.4rem;
     display: inline-block;
     justify-content: space-between;
-    position: absolute;
-    justify-content: flex-end;
-    justify-content: space-between;
+    margin-top: 1.5rem;
 }
 
 header nav a {
-    font-size: 2rem;
+    height: 10vw;
     font-family: 'oswald', sans-serif;
-    margin: 0.25rem 0;
     padding: 0.25rem 0;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    padding: 0;
+    display: block;
     text-decoration: none;
-    align-items: flex-end;
-    top: 0vw;
-
 }
 
 #menuknap {
     display: flex;
     flex: wrap;
-    font-size: 2rem;
-    top: 1vw;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    color: black;
 }
 
 /*navigation slut*/
@@ -83,6 +82,7 @@ header nav a {
     transition: transform .3s;
     transform-origin: top left;
     font-family: cursive;
+    text-align: center;
 
 }
 
@@ -120,7 +120,7 @@ header nav a {
     }
 }
 
-/*forside*/
+/*Forside*/
 
 #splash {
     /*position: relative;*/
@@ -131,14 +131,7 @@ header nav a {
     max-width: none;
 }
 
-#txt p {
-    position: absolute;
-    font-family: 'oswald', sans-serif;
-    justify-content: center;
-    color: orange;
-    font-size: 2rem;
-    left: 40vw;
-}
+
 
 .navn p {
     position: absolute;
@@ -148,4 +141,102 @@ header nav a {
     font-size: 2rem;
     right: 5vw;
     top: 4.5vw;
+}
+
+#txt p {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'oswald', sans-serif;
+    justify-content: center;
+    color: orange;
+    font-size: 2rem;
+    left: 47vw;
+}
+
+.img {
+    height: auto;
+    width: auto;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 400px) {
+    #splash {
+        background-position: 50% 0%;
+    }
+
+}
+
+@media only screen and (min-width: 401px) {
+    #splash {
+        background-position: 45% 0%;
+    }
+
+}
+
+@media only screen and (min-width: 608px) {
+    #splash {
+        background-position: 50% 0%;
+    }
+
+}
+}
+
+@media only screen and (min-width:1144px) {
+    header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0, 5rem;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+        margin: 0 0.5;
+        padding: 0 1rem 0 0;
+        border-right: 0.1rem solid #f2e4d7;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+        padding: 0;
+    }
+}
+
+
+/*test*/
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
+
+
+.box_grey {
+    width: 100%;
+    height: 200px;
+    background: lightgrey;
+    top: 180px;
+    left: 0vw;
+    position: absolute;
+}
+
+.box_grey h1 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 85px;
+    color: white;
 }

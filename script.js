@@ -1,4 +1,4 @@
-window.addEventListener("load", sidenVises)
+window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("sidenVises");
@@ -21,3 +21,8 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "X";
     }
 }
+
+
+AOS.init({
+    duration: 1200,
+});
