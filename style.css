@@ -9,7 +9,6 @@ header nav a:link {
 }
 
 /* visited link */
-
 header nav a:visited {
     color: black;
 }
@@ -25,7 +24,6 @@ header nav a:active {
 }
 
 header {
-    position: fixed;
     display: block;
     background: white;
     width: 100%;
@@ -103,35 +101,15 @@ header nav a {
     }
 }
 
-
-@media only screen and (min-width: 760px) {
-
-    #menuknap {
-        display: none;
-    }
-
-    #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    #menu li {
-        display: inline-block;
-    }
-}
-
 /*Forside*/
-
 #splash {
     /*position: relative;*/
     width: 100%;
     height: 100vh;
-    background-image: url(billeder/Artboard%201-20.jpg);
+    background-image: url(billeder/splash.jpg);
     background-size: cover;
     max-width: none;
 }
-
-
 
 .navn p {
     position: absolute;
@@ -140,18 +118,19 @@ header nav a {
     color: black;
     font-size: 2rem;
     right: 5vw;
-    top: 4.5vw;
+    top: 1vw;
+
 }
 
-#txt p {
+/*#txt p {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     font-family: 'oswald', sans-serif;
     justify-content: center;
     color: orange;
-    font-size: 2rem;
-    left: 47vw;
+    font-size: 1.5rem;
+    left: 47vw;*/
 }
 
 .img {
@@ -183,32 +162,9 @@ header nav a {
 }
 }
 
-@media only screen and (min-width:1144px) {
-    header {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    }
-
-    header nav {
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0, 5rem;
-    }
-
-    header nav a {
-        font-size: 1.5rem;
-        margin: 0 0.5;
-        padding: 0 1rem 0 0;
-        border-right: 0.1rem solid #f2e4d7;
-    }
-
-    header nav a:last-child {
-        border-right: none;
-        padding: 0;
-    }
-}
-
-
 /*test*/
+
+/*
 * {
     box-sizing: border-box;
 }
@@ -223,7 +179,6 @@ header nav a {
     color: #FFF;
     font-size: 3em;
 }
-
 
 .box_grey {
     width: 100%;
@@ -240,61 +195,47 @@ header nav a {
     margin-top: 85px;
     color: white;
 }
+*/
 
-/*portfolio*/
+/*Portfolio*/
 
-.container img {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 500px;
-    position: absolute;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25vw;
-    height: 25vw;
-    top: 30vw;
-    left: 9vw;
+#portfolio_billede {
+    width: 100vw;
+    height: 100vw;
+    background-image: url(billeder/portfolio_splash.jpg);
+    background-size: 100%;
+    max-width: none;
 }
 
-.emne2 img {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 500px;
-    position: absolute;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25vw;
-    height: 25vw;
-    top: 30vw;
-    left: 37.5vw;
-}
+#om_splash {
+    width: 100%;
+    height: 100vh;
+    background-image: url(billeder/Artboard%201-100.jpg);
+    background-size: cover;
+    max-width: none;
 
-.emne3 img {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 500px;
-    position: absolute;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25vw;
-    height: 25vw;
-    top: 30vw;
-    left: 66vw;
-}
-
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 
 /*Portfolio hover effekt*/
 
+img {
+    width: 100%;
+}
+
+.mother {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 .container {
     position: relative;
     width: 50%;
+    flex-basis: 400px;
+    flex-grow: 1;
+
 }
 
 .image {
@@ -308,8 +249,8 @@ img:hover {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 45vw;
-    left: 21.5vw;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -326,6 +267,21 @@ img:hover {
 .text {
     font-family: sans-serif;
     color: black;
-    font-size: 30px;
-    padding: 16px 32px;
+}
+
+.lastcontainer {
+    opacity: 0;
+}
+
+footer {
+    background-color: fuchsia;
+    max-width: 700px;
+    text-align: center;
+    margin: -60px auto 0 auto;
+    height: 60px;
+    width: 100%;
+}
+
+footer p {
+    display: inline;
 }
