@@ -226,47 +226,46 @@ img {
 
 /*OM*/
 
-.sectionwrapper{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
 .cv_container {
-    margin-left: 25vw;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 25vw;
 
 }
 
-.cv_billede {
-    width: 100%
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+.cv_top {
     background-image: url(billeder/Artboard%201.png);
     background-size: 100%;
     max-width: none;
     left: 25vw;
+    width: 50vw;
+    height: 25vw;
 
 }
 
-#cv .p_billede {
-    width: 25vw;
-    height: 32vw;
-    background-image: url(billeder/IMG_0682.jpeg);
-    background-size: 100%;
-    max-width: none;
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.boks1 {
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-color: palevioletred;
+    padding: 15px;
+    margin: 10px;
 }
 
 .boks2 {
     background-color: rgba(164, 173, 255, 0.81);
-    width: 25vw;
-    height: 50vw;
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin: 10px;
+
 }
 
 /*Footer design*/
+
 footer {
     background-color: black;
     max-width: 100%;
@@ -279,6 +278,4 @@ footer {
 footer p {
     left: 2vw;
     color: darkgrey;
-
-
 }
