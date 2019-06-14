@@ -122,17 +122,6 @@ header nav a {
 
 }
 
-/*#txt p {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'oswald', sans-serif;
-    justify-content: center;
-    color: orange;
-    font-size: 1.5rem;
-    left: 47vw;*/
-}
-
 .img {
     height: auto;
     width: auto;
@@ -160,62 +149,22 @@ header nav a {
     }
 
 }
-}
-
-/*test*/
-
-/*
-* {
-    box-sizing: border-box;
-}
-
-.item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
-    background: #ccc;
-    text-align: center;
-    color: #FFF;
-    font-size: 3em;
-}
-
-.box_grey {
-    width: 100%;
-    height: 200px;
-    background: lightgrey;
-    top: 180px;
-    left: 0vw;
-    position: absolute;
-}
-
-.box_grey h1 {
-    text-align: center;
-    font-family: sans-serif;
-    margin-top: 85px;
-    color: white;
-}
-*/
 
 /*Portfolio*/
 
-#portfolio_billede {
-    width: 100vw;
-    height: 100vw;
-    background-image: url(billeder/portfolio_splash.jpg);
+.bild_container {
+    margin-left: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.portfolio_billede {
+    background-image: url(billeder/Artboard%204.png);
+    width: 50vw;
+    height: 25vw;
     background-size: 100%;
-    max-width: none;
 }
-
-#om_splash {
-    width: 100%;
-    height: 100vh;
-    background-image: url(billeder/Artboard%201-100.jpg);
-    background-size: cover;
-    max-width: none;
-
-}
-
 
 /*Portfolio hover effekt*/
 
@@ -224,7 +173,7 @@ img {
 }
 
 .mother {
-    margin-top: 300px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
 
@@ -235,6 +184,8 @@ img {
     width: 50%;
     flex-basis: 400px;
     flex-grow: 1;
+    padding: 10px;
+    margin: 0 15px;
 
 }
 
@@ -273,15 +224,61 @@ img {
     opacity: 0;
 }
 
-footer {
-    background-color: fuchsia;
-    max-width: 700px;
+/*OM*/
+
+.sectionwrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cv_container {
+    margin-left: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cv_billede {
+    width: 100%
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    margin: -60px auto 0 auto;
-    height: 60px;
+    background-image: url(billeder/Artboard%201.png);
+    background-size: 100%;
+    max-width: none;
+    left: 25vw;
+
+}
+
+#cv .p_billede {
+    width: 25vw;
+    height: 32vw;
+    background-image: url(billeder/IMG_0682.jpeg);
+    background-size: 100%;
+    max-width: none;
+
+}
+
+.boks2 {
+    background-color: rgba(164, 173, 255, 0.81);
+    width: 25vw;
+    height: 50vw;
+}
+
+/*Footer design*/
+footer {
+    background-color: black;
+    max-width: 100%;
+    text-align: left;
+    /*    margin: -60px auto 0 auto;*/
+    height: 70px;
     width: 100%;
 }
 
 footer p {
-    display: inline;
+    left: 2vw;
+    color: darkgrey;
+
+
 }
