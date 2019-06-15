@@ -29,7 +29,7 @@ header {
     width: 100%;
     height: 110px;
     top: 4vw;
-    border-left-color: aqua;
+
 }
 
 header nav {
@@ -54,8 +54,10 @@ header nav a {
 }
 
 #menuknap {
+    /*
     display: flex;
     flex: wrap;
+*/
     font-size: 2.5rem;
     font-family: sans-serif;
     color: black;
@@ -153,17 +155,19 @@ header nav a {
 /*Portfolio*/
 
 .bild_container {
-    margin-left: 25vw;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20vw;
+
 
 }
 
 .portfolio_billede {
     background-image: url(billeder/Artboard%204.png);
-    width: 50vw;
-    height: 25vw;
+    width: 60vw;
+    height: 25.5vw;
     background-size: 100%;
+
 }
 
 /*Portfolio hover effekt*/
@@ -190,11 +194,21 @@ img {
 }
 
 .image {
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all .8s ease-in-out;
+}
+
+
+/*
+
+.image {
     opacity: 1;
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
 }
+*/
 
 .middle {
     transition: .5s ease;
@@ -207,8 +221,17 @@ img {
     text-align: center;
 }
 
+/*
 .container:hover .image {
     opacity: 0.3;
+}
+*/
+
+
+.container:hover .image {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
 }
 
 .container:hover .middle {
@@ -217,7 +240,7 @@ img {
 
 .text {
     font-family: sans-serif;
-    color: black;
+    color: white;
 }
 
 .lastcontainer {
@@ -249,10 +272,10 @@ img {
 }
 
 .boks1 {
-    flex-basis: 300px;
+    flex-basis: 100px;
     flex-grow: 1;
     background-color: palevioletred;
-    padding: 15px;
+    padding: 20px;
     margin: 10px;
 }
 
@@ -277,5 +300,29 @@ footer {
 
 footer p {
     left: 2vw;
-    color: darkgrey;
+    color: grey;
+}
+
+/*STILART*/
+
+#coverbillede {
+    width: 100%;
+    height: 75vh;
+    background-image: url(billeder/responsive/Untitled-1.png);
+    background-size: 100%;
+    max-width: none;
+}
+
+.start {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.start li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#stilart {
+    background-color: antiquewhite;
 }
