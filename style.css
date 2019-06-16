@@ -15,7 +15,7 @@ header nav a:visited {
 
 /* Hover */
 header nav a:hover {
-    color: orange;
+    color: #F5B04D;
 }
 
 /*
@@ -245,7 +245,7 @@ img {
 
 .text {
     font-family: sans-serif;
-    color: white;
+    color: blue;
 }
 
 .lastcontainer {
@@ -274,19 +274,47 @@ img {
 }
 
 .boks1 {
-    flex-basis: 100px;
-    flex-grow: 1;
-    background-color: palevioletred;
+    background-color: #FBE4FF;
+    flex-basis: 200px;
+    flex-grow: 2;
     padding: 20px;
+    margin: 10px;
+    border-style: solid;
+}
+
+.icons {
+    display: flex;
     margin: 10px;
 }
 
+.icons img {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    flex-grow: 0;
+    margin-left: 0.5em;
+}
+
+.icons p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    margin: 0 0 0 0.6em;
+    flex-grow: 1;
+}
+
 .boks2 {
-    background-color: rgba(164, 173, 255, 0.81);
+    background-color: #E0E5FD;
     flex-basis: 300px;
     flex-grow: 3;
     margin: 10px;
+    border-style: solid;
 
+}
+
+.erfaring p {
+    font-family: sans-serif;
+    /*    text-decoration: underline;*/
 }
 
 /*Footer design*/
@@ -328,7 +356,50 @@ footer p {
     font-family: sans-serif;
 }
 
+.start h4 {
+    font-size: 50px;
+}
+
 .start li {
     list-style-type: none;
     text-align: center;
+}
+
+#stilart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    background-color: #FBE4FF;
+    flex-basis: 300px;
+    flex-grow: 3;
+    padding: 20px;
+    margin: 10px;
+    border-style: solid;
+}
+
+.col2 {
+    background-color: #E0E5FD;
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin: 10px;
+    border-style: solid;
+}
+
+.col3 {
+    background-color: #FBE4FF;
+    flex-basis: 300px;
+    flex-grow: 3;
+    padding: 20px;
+    margin: 10px;
+    border-style: solid;
+}
+
+.col4 {
+    background-color: #E0E5FD;
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin: 10px;
+    border-style: solid;
 }
