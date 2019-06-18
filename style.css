@@ -1,7 +1,3 @@
-html {
-    background-color: white;
-}
-
 /*navigation*/
 
 header nav a:link {
@@ -175,7 +171,7 @@ header nav a {
 
 }
 
-/*Portfolio hover effekt*/
+/*Portfolio hover effekt med hjælp fra w3*/
 
 img {
     width: 100%;
@@ -252,6 +248,10 @@ img {
     opacity: 0;
 }
 
+.lastcontainer2 {
+    opacity: 0;
+}
+
 /*OM*/
 
 .cv_container {
@@ -282,6 +282,19 @@ img {
     border-style: solid;
 }
 
+#box p {
+    font-size: 1em;
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+#box li {
+    font-size: 1em;
+    line-height: 3;
+    font-family: sans-serif;
+
+}
+
 .icons {
     display: flex;
     margin: 10px;
@@ -303,67 +316,117 @@ img {
     flex-grow: 1;
 }
 
-.boks2 {
-    background-color: #E0E5FD;
-    flex-basis: 300px;
-    flex-grow: 3;
-    margin: 10px;
-    border-style: solid;
+.ommig p {
+    font-family: sans-serif;
+    font-size: 20px;
 
 }
 
 .erfaring p {
     font-family: sans-serif;
-    /*    text-decoration: underline;*/
+    font-size: 20px;
+
+
+}
+
+/*OM SEKTION - LÆS MERE FRA PETER ULF*/
+
+#box {
+    background-color: rgba(224, 229, 253, 0.86);
+    position: relative;
+    padding: 15px 10px 20px;
+    flex-basis: 300px;
+    flex-grow: 3;
+    margin: 10px;
+    border-style: solid;
+}
+
+#box.lille {
+    overflow: hidden;
+    max-height: 250px;
+    transition: max-height 0.5s ease-out;
+}
+
+#box.stor {
+    max-height: 3000px;
+    transition: max-height 1s ease-in;
+}
+
+
+/*Laver indhold vha css*/
+#box.lille span:after {
+    content: "+";
+}
+
+span:after {
+    content: "-";
+}
+
+
+#mere .plus {
+    /*    for at få den nærmere på bunden*/
+    margin-top: 40px;
+
+    /*    for at undgå at den opfører sit som et blockelement, og fylder hele bredden. */
+    /*    Derved sikrer jeg at jeg kan bruge parrent text-align: center */
+    display: inline-block;
+
+    /*    selve plussets farve og størrelse samt baggrund*/
+    color: black;
+    font-weight: 800;
+    width: 20px;
+    height: 20px;
+    background: white;
+}
+
+
+.blue_overlay {
+    /* for at få gradientbaggrunden til at fylde*/
+    height: 60px;
+    margin: 0;
+
+    /* for at placere gradientbaggrunden i bunden */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*    For at sikre at den fylder hele sin parent ud i bredden*/
+    width: 100%;
+
+    /*    selve gradienten*/
+    background: linear-gradient(rgba(224, 229, 253, 0.37), rgb(224, 229, 253));
+
+    /*    for at placere plusset i midten*/
+    text-align: center;
+
 }
 
 /*Footer design*/
 
 footer {
-    background-color: black;
-    max-width: 100%;
-    text-align: left;
-    /*    margin: -60px auto 0 auto;*/
-    height: 70px;
+    background-color: #9f907d;
+    color: #e5d3ba;
+    height: 40px;
     width: 100%;
+    text-align: center;
 }
 
-footer p {
-    left: 2vw;
-    color: grey;
+section,
+footer {
+    margin: 0 auto;
 }
 
 /*STILART*/
 
-#coverbillede {
-    width: 100%;
-    height: 75vh;
-    background-image: url(billeder/responsive/Untitled-1.png);
-    background-size: 100%;
-    max-width: none;
-}
-
-@media only screen and (min-width: 400px) {
-    #coverbillede {
-        height: 40vw;
-        width: 100%;
-    }
-
-}
-
-.start {
+.stilart_top {
     text-align: center;
     font-family: sans-serif;
+    margin: 0 auto;
 }
 
-.start h4 {
+.stilart_top h1 {
     font-size: 50px;
 }
 
-.start li {
-    list-style-type: none;
-    text-align: center;
-}
 
 #stilart {
     display: flex;
@@ -373,33 +436,14 @@ footer p {
 .col {
     background-color: #FBE4FF;
     flex-basis: 300px;
-    flex-grow: 3;
-    padding: 20px;
-    margin: 10px;
-    border-style: solid;
+    flex-grow: 2;
+    padding: 30px;
+    margin: 20px;
+
 }
 
-.col2 {
-    background-color: #E0E5FD;
-    flex-basis: 300px;
-    flex-grow: 3;
-    margin: 10px;
-    border-style: solid;
-}
-
-.col3 {
-    background-color: #FBE4FF;
-    flex-basis: 300px;
-    flex-grow: 3;
-    padding: 20px;
-    margin: 10px;
-    border-style: solid;
-}
-
-.col4 {
-    background-color: #E0E5FD;
-    flex-basis: 300px;
-    flex-grow: 3;
-    margin: 10px;
-    border-style: solid;
+.col p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 2;
 }
