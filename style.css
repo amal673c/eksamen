@@ -453,13 +453,6 @@ span:after {
     line-height: 2;
 }
 
-/*VIDEO*/
-
-.col video {
-    width: 40vw;
-    margin-left: 20;
-    padding: 20;
-}
 
 /*Footer design*/
 
@@ -469,9 +462,4 @@ footer {
     height: 40px;
     width: 100%;
     text-align: center;
-}
-
-section,
-footer {
-    margin: 0 auto;
 }
