@@ -21,8 +21,3 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "X";
     }
 }
-
-
-//AOS.init({
-//    duration: 1200,
-//});

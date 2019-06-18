@@ -53,10 +53,6 @@ header nav a {
 }
 
 #menuknap {
-    /*
-    display: flex;
-    flex: wrap;
-*/
     font-size: 2.5rem;
     font-family: sans-serif;
     color: black;
@@ -67,8 +63,6 @@ header nav a {
 
 /*BURGER*/
 .hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
     transform: translateX(-100%);
     opacity: 0;
 }
@@ -107,7 +101,6 @@ header nav a {
 /*Forside + navn*/
 
 #splash {
-    /*position: relative;*/
     width: 100%;
     height: 100vh;
     background-image: url(billeder/splash.jpg);
@@ -201,15 +194,7 @@ img {
 }
 
 
-/*
 
-.image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-*/
 
 .middle {
     transition: .5s ease;
@@ -222,11 +207,7 @@ img {
     text-align: center;
 }
 
-/*
-.container:hover .image {
-    opacity: 0.3;
-}
-*/
+
 
 
 .container:hover .image {
